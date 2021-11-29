@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content=" HTML, CSS, Javascript">
+    <meta name="description" content="Trail for HTML" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="30000000; url="heslb.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marx Project</title>
+    <link rel="stylesheet" href="./css/heslb.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+
+    <!-- front page -->
+      <div class="header">
+        <img src="./images/heslb.png" alt="heslb" class="logo">
+        <span class="accordion"></span>
+        <div class="heading">
+          <p >HIGHER STUDENTS LOAN BOARD - HESLB</p>
+          <P>Tanzania</P>
+          <i style="float: right; cursor: pointer; color: #4d94ff; margin: -50px 30px;" 
+          class="fas fa-sort-down myDropdown" id="myDropdown"></i>  
+        </div>
+         <div class="dropDown" id="Dropdown">
+          <a href="#"><i class="fas fa-arrow-right"></i> Log In</a>
+          <a href="#"><i class="fas fa-arrows-alt"></i> Password</a>
+          <a href="#"><i class="fas fa-arrow-left"></i> Log Out</a>
+        </div>
+      </div>
+    
+
+    <!-- left navigation bar -->
+
+      <div id="myNavigationBar" class="overlay">
+        <span style="font-size: medium; color: #4d94ff; font-weight: bold;">MENU</span>
+        <button class="tablinks" onclick="openDistrict(event,'dashboard')"><i class="fas fa-rocket"></i> Dashboard</button>
+        <button class="tablinks" onclick="openDistrict(event,'disbursement')"><i class="fas fa-folder"></i> Disbursements</button>
+        <button class="tablinks" onclick="openDistrict(event,'returns')"> <i class="fas fa-paint-roller"></i> Returns</button>
+        <button class="tablinks" onclick="openDistrict(event,'loanCharges')"><i class="fas fa-suitcase"></i> Loan Charges</button>
+        <button class="tablinks" onclick="openDistrict(event,'repayment')"><i class="fas fa-database"></i> Repayments</button>
+        <button class="tablinks" onclick="openDistrict(event,'statements')"><i class="fas fa-window-maximize"></i> Statements</button>
+        <button class="tablinks" onclick="openDistrict(event,'employment')"><i class="fas fa-address-card"></i> Employment Details</button>
+        <button class="tablinks" onclick="openDistrict(event,'contacts')"><i class="fas fa-phone"></i> Contact Details</button>
+      </div>
+
+
+    <!-- dashboard details -->
+      <div id="dashboard" class="tabcontent">
+        <div class="head">
+          <div class="head0">
+            <button><i class="fas fa-rocket"></i></button>
+          </div>
+          <div class="head1">
+            <span>Dashboard</span><br>
+            <p>Dashboard</p>
+          </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>     
+        <div class="balanc">
+          <div class="balanc1">
+            <p>It seems, you have liquidated loan!Please wait for verification to your liquidation letter.</p>
+          </div>
+        </div>
+        <div class="balance">
+          <p>Tsh 12, 121, 700. 00</p>
+          <p>Disbursed Amount</p>
+        </div>
+        <div class="balance">
+          <p>Tsh 121,217.00</p>
+          <p>Total charges amount</p>
+        </div>
+        <div class="balance">
+          <p>Tsh 0.00</p>
+          <p>Returned amount</p>
+        </div>
+        <div class="balance">
+          <p>Tsh 112, 500. 00</p>
+          <p>Amount Repaid</p>
+        </div>
+        <div>
+          <div class="details">
+            <span>CONTACT DETAILS</span>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint qui saepe quisquam nesciunt sed numquam.</p>
+          </div>
+          <div class="details">
+            <span>MAKE REPAYMENT</span>
+            <hr>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis dolores soluta ea voluptatem, quae voluptatibus minus quod nisi assumenda quo.</P>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- disbursement details -->
+      <div id="disbursement" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-folder"></i></button></div>
+            <div class="head1">
+              <span>Disbursements</span><br>
+              <p>Amount used while you are studing. </span>
+            </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+        <div class="table">
+          <span class="caption">DISBURSEMENT</span>
+          <table >
+            <tr>
+              <th>Items/Ac.Year</th>
+              <th>2015/2016</th>
+              <th>2016/2017</th>
+              <th>2017/2018</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Books and Stationery</td>
+              <td>200,000.00</td>
+              <td>200,000.00</td>
+              <td>200,000.00</td>
+              <td>600,000.00</td>
+            </tr>
+            <tr>
+              <td>Field Practical and Fare</td>
+              <td>620,000.00</td>
+              <td>620,000.00</td>
+              <td>-</td>
+              <td>1,240,000.00</td>
+            </tr>
+            <tr>
+              <td>Meals and Accomodation</td>
+              <td>2,099,500.00</td>
+              <td>2,040,000.00</td>
+              <td>2,040,000.00</td>
+              <td>6,179,500.00</td>
+            </tr>
+            <tr>
+              <td>Special Faculty Requirement</td>
+              <td>26,300.00</td>
+              <td>22,600.00</td>
+              <td>5,300.00</td>
+              <td>54,200.00</td>
+            </tr>
+            <tr>
+              <td>Tuition Fees</td>
+              <td>1,300,000.00</td>
+              <td>1,300,000.00</td>
+              <td>1,300,000.00</td>
+              <td>3,900,000.00</td>
+            </tr>
+              <td>Research</td>
+              <td>-</td>
+              <td>-</td>
+              <td>148,000.00</td>
+              <td>148,000.00</td>
+             </tr>
+             <tr>
+               <td>Total</td>
+               <td>4,245,800.00</td>
+               <td>4,182,600.00</td>
+               <td>3,693,300.00</td>
+               <td>12,121,700.00</td>
+              </tr>
+          </table>
+        </div>
+      </div>
+
+
+      
+      <!-- returns details -->
+      <div id="returns" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-paint-roller"></i></button></div>
+            <div class="head1">
+              <span>Returns</span><br>
+              <p>Amount returned</p>
+            </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+        <div class="table">
+          <span class="caption">Returns</span>
+          <table>
+            <tr>
+              <th>Item</th>
+              <th>Year</th>
+              <th>Amount</th>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td colspan="2">Total Returned Amount</td>
+              <td>-0.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+
+    <!-- loan charges details -->
+      <div id="loanCharges" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-suitcase"></i></button></div>
+          <div class="head1">
+            <span>Loan Charges</span><br>
+            <p>Amount accumulated due to LAF, VRF or PENALTY</p>
+          </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+        <div class="table">
+          <table>
+            <span class="caption">Loan Charges</span>
+            <tr>
+              <td>Loan Administration fee</td>
+              <td>121,217.00</td>
+            </tr>
+            <tr>
+              <td>Penalty</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Value Retention Fee</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td style="border-top: 4px solid #000;">121,217.00</td>
+            </tr>
+          </table>     
+        </div>
+         </div>
+
+
+
+     <!-- repayment details -->
+      <div id="repayment" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-database"></i></button></div>
+          <div class="head1">
+            <span>Repayments</span><br>
+            <p>Amount Repaid</p>
+          </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+        <div class="table">
+          <span class="caption">Loan Repayments</span>
+          <table>
+            <tr>
+              <th>SNO</th>
+              <th>EMP-CODE</th>
+              <th>SHORT-CODE</th>
+              <th>PAY-PERIOD</th>
+              <th>AMOUNT</th>
+              <th>LOAN-BALANCE</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>01267</td>
+              <td>PSAF</td>
+              <td>06-2021</td>
+              <td>112,500.00</td>
+              <td>12,130,417.00</td>
+            </tr>
+ 
+              <tr style="background-color:mintcream;border-radius: 4px;">
+                <td colspan="4">Total Repaid Amount</td>
+                <td colspan="2">112,500.00</td>
+              </tr>
+
+          </table>
+        </div>
+      </div>
+
+      
+      <!-- staments details -->
+      <div id="statements" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-window-maximize"></i></button></div>
+          <div class="head1">
+            <span>Loan Statements</span><br>
+            <p>Formated loan details, in summary way that can be printed.</p>
+
+          </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+        <div class="table">
+          <span class="caption">customer statement</span>
+          <div class="loan-statement">
+          <div class="download-statement">
+            <span class="caption">loan statement</span>
+            <h4><a href="window.download()"></a> Download Statement <i class="fas fa-file-pdf"></i> 
+              <button onclick="openDistrict(event, 'repayment')"> View Repayments</button>
+            </h4>
+          </div>
+          <div class="statementDetails">
+            <div class="left-bar-details">
+              <table class="contact">
+                <tr>
+                  <td><label for="fName">Name:</label></td>
+                  <td><input type="text" value="SAFINA, IDDI AWAMI"></td>
+                </tr>
+                <tr>
+                  <td><label for="inst">Institution:</label></td>
+                  <td><input type="text" value="MUCE"></td>
+                </tr>
+                <tr>
+                  <td><label for="corse">Course:</label></td>
+                  <td><input type="text" value="BSE"></td>
+                </tr>
+                <tr>
+                  <td><label for="index">F4 Indexno:</label></td>
+                  <td><input type="text" value="S0999.0068.2021"></td>
+                </tr>
+                <tr>
+                  <td><label for="controlNumb">Control #:</label></td>
+                  <td><input type="text" value="99111468555"></td>
+                </tr>
+              </table>
+            </div>
+              <div class="right-bar-details">
+                <table class="contact">
+                  <tr>
+                    <td><label for="fName">Total Loan:</label></td>
+                    <td><input type="text" value="8,000,000,000/="></td>
+                  </tr>
+                  <tr>
+                    <td><label for="inst">Repayment:</label></td>
+                    <td><input type="text" value="8,000,000,000/="></td>
+                  </tr>
+                  <tr>
+                    <td><label for="corse">outstanding:</label></td>
+                    <td><input type="text" value="8,000,000,000/="></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          <table >
+            <tr>
+              <th>Items/Ac.Year</th>
+              <th>2015/2016</th>
+              <th>2016/2017</th>
+              <th>2017/2018</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Books and Stationery</td>
+              <td>200,000.00</td>
+              <td>200,000.00</td>
+              <td>200,000.00</td>
+              <td>600,000.00</td>
+            </tr>
+            <tr>
+              <td>Field Practical and Fare</td>
+              <td>620,000.00</td>
+              <td>620,000.00</td>
+              <td>-</td>
+              <td>1,240,000.00</td>
+            </tr>
+            <tr>
+              <td>Meals and Accomodation</td>
+              <td>2,099,500.00</td>
+              <td>2,040,000.00</td>
+              <td>2,040,000.00</td>
+              <td>6,179,500.00</td>
+            </tr>
+            <tr>
+              <td>Special Faculty Requirement</td>
+              <td>26,300.00</td>
+              <td>22,600.00</td>
+              <td>5,300.00</td>
+              <td>54,200.00</td>
+            </tr>
+            <tr>
+              <td>Tuition Fees</td>
+              <td>1,300,000.00</td>
+              <td>1,300,000.00</td>
+              <td>1,300,000.00</td>
+              <td>3,900,000.00</td>
+            </tr>
+              <td>Research</td>
+              <td>-</td>
+              <td>-</td>
+              <td>148,000.00</td>
+              <td>148,000.00</td>
+             </tr>
+             <tr>
+               <td>Total</td>
+               <td>4,245,800.00</td>
+               <td>4,182,600.00</td>
+               <td>3,693,300.00</td>
+               <td>12,121,700.00</td>
+              </tr>
+          </table>
+          
+          </div>
+        </div>
+      </div>
+
+
+
+    <!-- employment details -->
+      <div id="employment" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-id-card"></i></button></div>
+          <div class="head1">
+            <span>Employment Details</span><br>
+            <p>Any company you are or were employed.</span>
+          </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+        <div class="table">
+          <span class="caption">Employer Details</span>
+          <span></span>
+          <hr>
+          <table>
+            <tr>
+              <td><label for="estatus">Employment status:</label></td>
+              <td>SELF EMPLOYED</td>
+            </tr>
+            <tr>
+              <td><label for="cemplyr">Current Employer Name:</label></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td><label for="cemplyr">Check No:</label></td>
+              <td></td>
+            </tr>            
+            <tr>
+              <td><label for="cemplyr">EmployeeId/PF-Number:</label></td>
+              <td></td>
+            </tr>            
+            <tr>
+              <td><label for="cemplyr">Region:</label></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
+
+    <!-- contacts details starts here -->
+      <div id="contacts" class="tabcontent">
+        <div class="head">
+          <div class="head0"><button><i class="fas fa-phone"></i></button></div>
+          <div class="head1">
+            <span>Contacts</span><br>
+            <p>Your contacts details.</p>
+          </div>
+          <div class="head2">
+            <button>SAFINA, IDDI AWAMI</button>
+            <i class="fas fa-star"></i></div>
+        </div>
+
+        <div style="width: 450px; float: left;" class="table">
+          <span class="caption">MY CONTACTS</span>
+          <table class="contact">
+            <tr>
+              <td><label for="index">F4 Indexno :</label></td>
+              <td><input type="text" value="S0999.0068.2021"></td>
+            </tr>
+            <tr>
+              <td><label for="fName">Full Name :</label></td>
+              <td><input type="text" value="SAFINA, IDDI AWAMI"></td>
+            </tr>
+            <tr>
+              <td><label for="inst">Institution :</label></td>
+              <td><input type="text" value="MUCE"></td>
+            </tr>
+            <tr>
+              <td><label for="corse">Course :</label></td>
+              <td><input type="text" value="BSE"></td>
+            </tr>
+            <tr>
+              <td><label for="controlNumb">Controlnumber :</label></td>
+              <td><input type="text" value="99111468555"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email :</label></td>
+              <td><input type="email" value="nmaxneeman54@gmail.com"></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Phone number :</label></td>
+              <td><input type="text" value="0710207894"></td>
+            </tr>
+          </table>
+        </div><br><br>
+
+        <div style="width: 500px; float: left;" class="table">
+          <span class="caption">CONTACTS-UPDATES</span>
+          <table class="">
+            <tr>
+              <td><label for="email">Email :</label></td>
+              <td><input type="email" value="nmaxneeman54@gmail.com"></td>
+            </tr>
+            <tr>
+              <td><label for="phone">Phone number :</label></td>
+              <td><input type="text" value="0710207894"></td>
+            </tr>
+          </table>
+          <div class="update">
+            <input type="button" value="Update"><br>
+            <p>Update my contact details.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="heslb.js"></script>
+    <noscript>Sorry, Your browser does not support Javascript.</noscript>
+  </body>
+</html>
+
