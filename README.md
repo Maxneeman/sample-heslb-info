@@ -11,3 +11,6 @@ Here I'm going to add some HTML.
 
 # 3rd add some css file
 Using scss pre-processor
+
+# 4th add image and js files
+These are the images to be used in this sample website

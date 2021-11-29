@@ -1,0 +1,433 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container .header {
+  top: -25px;
+  left: -10px;
+  margin: 0px;
+  width: 101%;
+  height: 100px;
+  padding: 10px 0px;
+  text-align: center;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 5px solid #a68fe7;
+}
+
+.container .header .logo {
+  width: 18%;
+  height: 95px;
+  position: absolute;
+  float: left;
+  left: 1px;
+  top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .header .dropDown {
+  top: 70px;
+  width: 100px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+  right: -8px;
+  text-align: left;
+  position: absolute;
+  background-color: #c1b2e9;
+}
+
+.container .header .dropDown a {
+  float: left;
+  width: 100px;
+  padding: 5px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.container .header .dropDown a :hover {
+  color: #000;
+  background-color: #c1b2e9;
+}
+
+.container .active, .container .accordion {
+  top: 5px;
+  left: 18%;
+  width: 50px;
+  margin: 0px;
+  color: #a68fe7;
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  background-color: #fff;
+}
+
+.container .accordion {
+  background-color: #fff;
+}
+
+.container .accordion::after {
+  content: '\2630';
+}
+
+.container .active::after {
+  content: '\00D7';
+  clear: '\00D7';
+}
+
+.container .active::before {
+  content: none;
+}
+
+.container .overlay {
+  width: 20%;
+  float: left;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: -25px;
+  margin-left: -10px;
+  background-color: #fff;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.container .overlay .tablinks {
+  width: 80%;
+  margin: auto;
+  display: block;
+  cursor: pointer;
+  font-size: 1vw;
+  text-align: left;
+  border-width: 0px;
+  padding: 15px 15px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.container .overlay .tablinks :hover {
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: 1px solid blue;
+  background-color: #572ad3;
+}
+
+.container .tabcontent {
+  width: 80%;
+  height: 1000px;
+  display: none;
+  margin: auto;
+  margin-left: 20%;
+  margin-top: -45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background-color: mintcream;
+}
+
+.container .tabcontent .head {
+  background-color: #f2f2f2;
+  height: 80px;
+}
+
+.container .tabcontent .head .head0 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container .tabcontent .head .head0 button {
+  float: left;
+  font-size: 20px;
+  margin-top: -15px;
+  margin-left: 20px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 4px;
+  border-width: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .tabcontent .head .head1 {
+  margin-top: 20px;
+  margin-left: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .tabcontent .head .head1 span {
+  font-size: 25px;
+  margin: 5px;
+}
+
+.container .tabcontent .head .head1 p {
+  font-size: 12px;
+}
+
+.container .tabcontent .head .head2 button {
+  margin-right: 65px;
+  margin-top: -56px;
+  font-size: 10px;
+  float: right;
+  width: 150px;
+  padding: 12px;
+  color: #fff;
+  border-width: 0px;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #8981f7;
+}
+
+.container .tabcontent .head .head2 i {
+  margin-right: 25px;
+  margin-top: -56px;
+  float: right;
+  font-size: 10px;
+  padding: 12px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+.container .tabcontent .balanc {
+  width: 98%;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: left;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #eeffcc;
+  opacity: 0.9;
+}
+
+.container .tabcontent .balanc .balanc1 {
+  width: 100%;
+  background-color: #fff;
+  padding: 1px 20px;
+  opacity: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.container .tabcontent .balance {
+  width: 45%;
+  float: left;
+  height: 80px;
+  margin: 10px;
+  text-align: left;
+  padding: 0px 15px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .tabcontent div .details {
+  float: left;
+  width: 45%;
+  height: 150px;
+  margin: 12px;
+  font-size: 1vw;
+  text-align: left;
+  border-radius: 4px;
+  padding: 10px 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .tabcontent .table {
+  padding: 10px;
+  margin: 10px;
+  width: 94%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .tabcontent .table .caption, .container .tabcontent .table .loan-statement .download-statement .caption {
+  text-align: left;
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 10px;
+  color: #000;
+}
+
+.container .tabcontent .table table {
+  margin: auto;
+  width: 85%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .tabcontent .table table tr :nth-child(8) {
+  font-weight: bold;
+}
+
+.container .tabcontent .table table tr td :nth-child(5) {
+  font-weight: bold;
+}
+
+.container .tabcontent .table table input {
+  border-width: 0px;
+  width: auto;
+}
+
+.container .tabcontent .table table input :focus {
+  outline: none;
+}
+
+.container .tabcontent .table .loan-statement {
+  border-radius: 4px 4px 0px 0px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container .tabcontent .table .loan-statement .download-statement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1px auto;
+  border-radius: inherit;
+  border-bottom: 1px solid magenta;
+}
+
+.container .tabcontent .table .loan-statement .download-statement h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .tabcontent .table .loan-statement .download-statement h4 button {
+  width: 100px;
+  height: auto;
+  padding: 4px;
+  font-size: 10px;
+  margin: auto 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: gray;
+  border-width: 0px;
+  cursor: pointer;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .left-bar-details, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details {
+  text-align: left;
+  padding: 2px;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .left-bar-details .contact label, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details .contact label {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .left-bar-details .contact input, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details .contact input {
+  background-color: mintcream;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .left-bar-details .contact input[type="button"], .container .tabcontent .table .loan-statement .statementDetails .right-bar-details .contact input[type="button"] {
+  border-width: 0px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .left-bar-details table, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details table, .container .tabcontent .table .loan-statement .statementDetails .left-bar-details th, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details th, .container .tabcontent .table .loan-statement .statementDetails .left-bar-details td, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details td {
+  border-top: 0px;
+  padding: 0px;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .left-bar-details table, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details table, .container .tabcontent .table .loan-statement .statementDetails .left-bar-details th, .container .tabcontent .table .loan-statement .statementDetails .right-bar-details th, .container .tabcontent .table .loan-statement .statementDetails .left-bar-details td:nth-child(1), .container .tabcontent .table .loan-statement .statementDetails .right-bar-details td:nth-child(1) {
+  text-align: right;
+  padding-right: 10px;
+  font-variant: small-caps;
+}
+
+.container .tabcontent .table .loan-statement .statementDetails .right-bar-details {
+  text-align: right;
+}
+
+.container .heading {
+  width: 93%;
+  text-align: center;
+}
+
+.container .heading button {
+  padding: 8px;
+  color: #fff;
+  border-width: 0px;
+  border-radius: 4px;
+  background-color: blue;
+}
+
+.container table, .container th, .container td {
+  text-align: left;
+  padding: 8px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-collapse: collapse;
+  border-top: 1px solid #c1b2e9;
+}
+
+.container .update {
+  margin-left: 40px;
+}
+
+.container .clearborder {
+  border-top: 1px solid #c1b2e9;
+}
+
+.container table tr:nth-child(8) {
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 300px) {
+  .container .tabcontent .balanc {
+    width: 22.5%;
+  }
+}
+/*# sourceMappingURL=heslb.css.map */
